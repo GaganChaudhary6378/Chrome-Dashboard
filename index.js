@@ -51,7 +51,6 @@ navigator.geolocation.getCurrentPosition((position) => {
       return res.json();
     })
     .then(data => {
-    //   console.log(data);
       let iconUrl=`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       weatherEl.innerHTML =`
       <img src=${iconUrl} />

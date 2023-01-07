@@ -1,33 +1,39 @@
 *{
-    box-sizing:border-box;
+    box-sizing:content-box;
     margin-bottom: 10vh;
     overflow: hidden;
 }
 body{ 
     background: no-repeat center center fixed;
-    background-size: cover;
+    background-size:cover;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0px 0px 20px #aaaaaa ;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    /* text-shadow: 0px 0px 20px #aaaaaa ; */
     font-weight: bold;
 }
 main{
     padding: 15px;
-    height: 108vh;
+    height: 115vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
 }
+main
 div.top{
     display: flex;
     justify-content: space-between;
+    
 }
 h1.time{
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20%;
+    
 }
 div#crypto-el{
     font-size: 1.3rem;
+    height: fit-content;
 }
 div#crypto-el > p{
     margin: 0;
@@ -46,17 +52,14 @@ div#weather{
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* align-self: flex-start; */
 }
 
 div#weather > img{
     width: 70px;
-    /* margin-right: px; */
 }
 .weather-city{
     width: 100%;
     text-align: right;
-    /* margin: 0; */
     margin-top:-80px;
 }
 .weather-temp{
@@ -64,4 +67,10 @@ div#weather > img{
     margin-top: -0px;
     font-size: 1.7rem;
     margin-left: -10px;
+}
+.mention{
+    overflow:visible;
+    font-size: 1rem;
+    display: flex; 
+    justify-content: space-between;
 }

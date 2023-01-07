@@ -1,0 +1,13 @@
+{
+    
+    "manifest_version": 3,
+    "name": "Own Dashboard",
+    "version": "1.0.1",
+  
+    "action": {
+        "default_icon":"site-icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab":"index.html"
+    }
+}
